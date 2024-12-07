@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web.bev</title>
+  <link rel="stylesheet" href="ahom.css">
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="bg-clip">
+        <source src="yes.mov" type="mov">
+    </video>
+    <section class="container">
+
+        <section class="navbar-container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <h2 class="name">
+                        <span class="web">WEB.</span><span class="bev">BEV</span>
+                    </h2>
+                </div>
+        
+                <div class="buttons">
+                    <button class="home" onclick="homefunc()" id="home">Home</button>
+                    <button class="aboutme" onclick="aboutmefunc()" id="aboutme">About Me</button>
+                    <button class="portfolio" onclick="portfoliofunc()" id="portfolio">Portfolio</button>
+                    <button class="contact" onclick="contactfunc()" id="contact">Contact</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-page">
+
+            <div class="my-head">
+                <div class="head-content">
+                    <h2>Portfolio No. 5</h2>
+                    <h1>Comparative Study on Different Types of Motherboard</h1>
+                    <div class="shortcuts">
+                        <button class="port1" onclick="port1func()">1</button>
+                        <button class="port2" onclick="port2func()">2</button>
+                        <button class="port3" onclick="port3func()">3</button>
+                        <button class="port4" onclick="port4func()">4</button>
+                        <button class="port5" onclick="port5func()">5</button>
+                        <button class="port6" onclick="port6func()">6</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port5-content">
+                <div class="intro">
+                    <h2>Introduction</h2>
+                    <p>
+                        The motherboard, or mainboard, is the central printed circuit board 
+                        (PCB) that connects and facilitates communication among a computer's critical 
+                        components, such as the CPU, memory modules, and chipsets (Tomljanović et al., 2013). 
+                        It also provides slots for expansion cards and controllers, ensuring the components 
+                        work together harmoniously (Tri, 2020). The motherboard's form factor defines its 
+                        physical dimensions, layout, and compatibility with computer cases and hardware. 
+                        Standard form factors like AT, ATX, and Mini-ITX cater to various needs, influencing 
+                        the number of CPU sockets, memory slots, PCI expansion slots, and integrated features 
+                        it can support (Eli & Eli, 2024).
+                    </p>
+                </div>
+
+                <div class="discussion">
+                    <h2>Discussion</h2>
+                    <p>
+                        The motherboard includes four key components: the chipset, which manages data flow between 
+                        the CPU, memory, and peripherals; the CPU socket, which ensures compatibility with 
+                        the processor; expansion slots for adding components like graphics cards; and memory 
+                        slots for RAM, enabling the CPU to access temporary storage (Sabri et al., 2018). These 
+                        elements define the system's capabilities and performance. The motherboard's form factor 
+                        determines its dimensions, layout, and compatibility with cases and components, evolving 
+                        over time to meet needs for compactness, expandability, or performance (Teja, 2024). 
+                        The AT form factor, introduced by IBM in the 1980s, was large (12 x 13.8 inches) and lacked 
+                        integrated peripheral ports, eventually being replaced by more compact designs (Teja, 2024).
+                    </p>
+
+                    <p><strong>AT (Advanced Technology) Motherboard</strong></p>
+                    <ul>
+                        <li><p>• Introduced by IBM in the 1980s, becoming a standard for early PCs.</p></li>
+                        <li><p>• Measures 12 x 13.8 inches, making it too large for compact cases.</p></li>
+                        <li><p>• Had limited peripheral support with a single 5-pin DIN connector for keyboards.</p></li>
+                        <li><p>• Replaced by more compact and versatile designs (Teja, 2024).</p></li>
+                    </ul>
+
+                    <p><strong>ATX (Advanced Technology eXtended) Motherboard</strong></p>
+                    <ul>
+                        <li><p>• Developed by Intel in 1995 as a benchmark for modern motherboards.</p></li>
+                        <li><p>• Measures 12 x 9.6 inches, offering better airflow and component accessibility.</p></li>
+                        <li><p>• Features multiple CPU sockets, RAM slots, and PCIe slots, supporting advanced functions.</p></li>
+                        <li><p>• Popular due to its balance of size, expandability, and compatibility.</p></li>
+                    </ul>
+
+                    <p><strong>BTX (Balanced Technology eXtended) Motherboard</strong></p>
+                    <ul>
+                        <li><p>• Designed by Intel to improve thermal management in PCs.</p></li>
+                        <li><p>• Optimized layout with CPU positioned near intake fan for better cooling.</p></li>
+                        <li><p>• Failed to gain widespread adoption and was largely replaced by ATX.</p></li>
+                    </ul>
+
+                    <p><strong>Extended-ATX (E-ATX) Motherboard</strong></p>
+                    <ul>
+                        <li><p>• A larger variant of ATX, measuring up to 12 x 13 inches.</p></li>
+                        <li><p>• Commonly used in high-performance systems like servers and gaming rigs.</p></li>
+                        <li><p>• Offers more PCIe slots and greater RAM capacity, but requires larger cases and is more expensive.</p></li>
+                    </ul>
+
+                    <p><strong>LPX (Low Profile eXtended) Motherboard</strong></p>
+                    <ul>
+                        <li><p>• Designed for slim desktop cases using riser cards for space-saving.</p></li>
+                        <li><p>• Limited by poor cooling and restricted upgrade options.</p></li>
+                        <li><p>• Replaced by more efficient form factors like Micro-ATX and Mini-ITX.</p></li>
+                    </ul>
+
+                    <p><strong>Micro-ATX Motherboard</strong></p>
+                    <ul>
+                        <li><p>• A smaller version of ATX, measuring 9.6 x 9.6 inches.</p></li>
+                        <li><p>• Compatible with ATX cases but offers fewer expansion slots (typically 3-4).</p></li>
+                        <li><p>• Ideal for budget builds or compact desktops, balancing performance and size.</p></li>
+                    </ul>
+
+                    <p><strong>Mini-ITX Motherboard</strong></p>
+                    <ul>
+                        <li><p>• A very compact form factor, measuring 6.7 x 6.7 inches.</p></li>
+                        <li><p>• Primarily used in specialized, small systems like home theater PCs or embedded systems.</p></li>
+                        <li><p>• Supports modern processors but has limited expansion slots and RAM capacity.</p></li>
+                    </ul>
+
+                    <p><strong>Mini-ATX and Pico BTX Motherboards</strong></p>
+                    <ul>
+                        <li><p>• Mini-ATX is a smaller alternative to ATX for compact cases.</p></li>
+                        <li><p>• Pico BTX is an ultra-compact version of BTX, designed for small systems.</p></li>
+                        <li><p>• Both are niche form factors with limited mainstream use.</p></li>
+                    </ul>
+                </div>
+
+                <table>
+                    <h2>Motherboards</h2>
+                    <thead>
+                        <tr>
+                            <th>Form Facotr</th>
+                            <th>Memory Slots</th>
+                            <th>Chipsets</th>
+                            <th>PCI Slots</th>
+                            <th>SATA</th>
+                            <th>Built-in Features</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AT Motherboard</td>
+                            <td>2-4</td>
+                            <td>Legacy Chipsets</td>
+                            <td>3</td>
+                            <td>2-4</td>
+                            <td>Basic I/O 
+                                Ports, 
+                                power 
+                                connecto
+                                 r – dual 
+                                6-pin AT, 
+                                BIOS 
+                                Chip, 
+                                and no 
+                                onboard 
+                                graphics
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>ATX Motherboard</td>
+                            <td>4+</td>
+                            <td>Intel 
+                                Z
+                                series/ 
+                                AMD B
+                                series 
+                            </td>
+                            <td>4-7</td>
+                            <td>6-12</td>
+                            <td>Modern 
+                                I/O Ports 
+                                (USB, 
+                                Ethernet
+                                 ), 
+                                power 
+                                connector - 20/24
+                                pin ATX, UEFI 
+                                Chip, 
+                                and 
+                                onboard 
+                                audio  
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>BTX 
+                                Motherboard </td>
+                            <td>2-4 </td>
+                            <td>Intel 
+                                chipset </td>
+
+                            <td>
+                                2-3
+                            </td>
+                            <td>4</td>
+                            <td>Modern 
+                                I/O Ports 
+                                (USB, 
+                                Ethernet
+                                 ), power 
+                                connecto
+                                 r – 
+                                20/24
+                                pin ATX, 
+                                UEFI 
+                                Chip, 
+                                and 
+                                improve
+                                 d airflow 
+                                design </td>
+                        </tr>
+
+                        <tr>
+                            <td>Extended
+                                ATX 
+                                Motherboard
+                            </td>
+                            <td>6-8</td>
+                            <td>High-end 
+                                    chipsets 
+                            </td>
+                            <td>5+</td>
+                            <td>6-16+</td>
+                            <td>
+                                Dual
+GPU 
+support, 
+high 
+memory 
+capacity, 
+enhance
+ d cooling 
+system, 
+power 
+connecto
+ r – 24
+pin ATX, 
+and 
+UEFI 
+Chip 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>LPX 
+                                Motherboard 
+                            </td>
+                            <td>1-2</td>
+                            <td>Legacy chipsets</td>
+                            <td>1-2</td>
+                            <td>2</td>
+                            <td>Basic I/O 
+                                Ports, 
+                                power 
+                                connecto
+                                 r – AT 
+                                (varies), 
+                                BIOS 
+                                Chip, 
+                                and 
+                                minimal 
+                                expansio
+                                 n options 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Micro-ATX 
+                                Motherboard
+                            
+                            </td>
+                            <td>2-4</td>
+                            <td>Intel B
+                                series/ 
+                                AMD A
+                                series 
+                            </td>
+                            <td>2-4</td>
+                            <td>4-8</td>
+                            <td>
+                                Compact 
+I/O Ports 
+(USB, 
+Ethernet
+ ), power 
+connecto
+ r – 
+20/24
+pin ATX, 
+UEFI 
+Chip, 
+and 
+onboard 
+audio 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Mini-ITX 
+                                Motherboard </td>
+                                <td>2</td>
+                                <td>AMD 
+                                    B450/ 
+                                    Intel 
+                                    H410</td>
+                                    <td>2</td>
+                                    <td>2-6</td>
+                                    <td>
+                                        Compact 
+I/O Ports 
+(USB, 
+Ethernet
+ ), power 
+connecto
+r – 
+20/24
+pin ATX, 
+UEFI 
+Chip, 
+and Wi
+Fi and 
+Bluetoot
+ h 
+support 
+                                    </td>
+                        </tr>
+                        <tr>
+                           <td>Mini-ATX 
+                            Motherboard 
+                        </td>
+                        <td>2-4</td>
+                        <td>Entry-level chipsets</td>
+                        <td>2</td>
+                        <td>2</td>
+                        <td>Basic I/O 
+                            Ports, 
+                            power 
+                            connecto
+                             r – 20
+                            pin ATX, 
+                            UEFI 
+                            Chip, 
+                            and 
+                            basic 
+                            expansio
+                             n options</td>
+                        </tr>
+
+                        <tr>
+                            <td>Pico BTX 
+                                Motherboard </td>
+
+                            <td>1-2</td>
+                            <td>Intel chipset</td>
+                            <td>1</td>
+                            <td>2</td>
+                            <td>
+                                Minimal 
+I/O 
+Ports, 
+power 
+connecto
+ r – 20
+pin ATX, 
+UEFI 
+Chip, 
+and low 
+power 
+consump
+ tion
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Standard
+                                ATX 
+                                Motherboard 
+                            </td>
+                            <td>4+</td>
+                            <td>Intel B
+                                series, 
+                                Z-series/ 
+                                AMD 
+                                Ryzen 
+                            
+                            </td>
+                            <td>3-6</td>
+                            <td>6-8</td>
+                            <td>Advance
+                                d I/O 
+                               Ports 
+                               (USB, 
+                               Ethernet
+                                ), power 
+                               connecto
+                                r - 24-pin 
+                               ATX, 
+                               UFEI 
+                               Chip, 
+                               and 
+                               onboard 
+                               audio </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="reference-cont">
+                <h2>Reference</h2>
+                <div class="references">
+                    <div class="reference-item">
+                        Teja, R. (2024, September 18). Motherboard sizes | Comparison of ATX, E-ATX, Micro-AT and Mini-ITX. ElectronicsHub. 
+                        <a href="https://www.electronicshub.org/motherboard-sizes/" target="_blank">https://www.electronicshub.org/motherboard-sizes/</a>
+                    </div>
+                    <div class="reference-item">
+                        Tri, R. (2020). PC Hardware: A Beginner’s Guide. Tricahyajuliadiadi. 
+                        <a href="https://www.academia.edu/44590595/PC_Hardware_A_Beginners_Guide" target="_blank">https://www.academia.edu/44590595/PC_Hardware_A_Beginners_Guide</a>
+                    </div>
+                    <div class="reference-item">
+                        Eli, & Eli. (2024, June 25). A comprehensive guide to Motherboard form factors → FixoID. Fixoid. 
+                        <a href="https://fixoid.com/articles/a-comprehensive-guide-to-motherboard-form-factors/" target="_blank">https://fixoid.com/articles/a-comprehensive-guide-to-motherboard-form-factors/</a>
+                    </div>
+                    <div class="reference-item">
+                        Sabri, N., Mukim, M., Ibrahim, Z., Hasan, N., & Ibrahim, S. (2018). Computer motherboard component recognition using texture and shape features. In <i>2018 9th IEEE Control and System Graduate Research Colloquium (ICSGRC)</i>, 121–125. 
+                        <a href="https://doi.org/10.1109/ICSGRC.2018.8657579" target="_blank">https://doi.org/10.1109/ICSGRC.2018.8657579</a>
+                    </div>
+                    <div class="reference-item">
+                        Tomljanović, J., Turina, T., & Krelja Kurelovic, E. (2013). Motherboard and user experience. In <i>Proceedings of the International Conference on Information Technology Interfaces</i> (pp. 689–694). 
+                        <a href="https://www.researchgate.net/publication/261424537_Motherboard_and_user_experience" target="_blank">https://www.researchgate.net/publication/261424537_Motherboard_and_user_experience</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="home.js"></script>
+</body>
+</html>

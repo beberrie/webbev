@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web.bev</title>
+  <link rel="stylesheet" href="ahom.css">
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="bg-clip">
+        <source src="yes.mov" type="mov">
+    </video>
+    <section class="container">
+
+        <section class="navbar-container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <h2 class="name">
+                        <span class="web">WEB.</span><span class="bev">BEV</span>
+                    </h2>
+                </div>
+        
+                <div class="buttons">
+                    <button class="home" onclick="homefunc()" id="home">Home</button>
+                    <button class="aboutme" onclick="aboutmefunc()" id="aboutme">About Me</button>
+                    <button class="portfolio" onclick="portfoliofunc()" id="portfolio">Portfolio</button>
+                    <button class="contact" onclick="contactfunc()" id="contact">Contact</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-page">
+
+            <div class="my-head">
+                <div class="head-content">
+                    <h2>Portfolio No. 3</h2>
+                    <h1>Number Systems</h1>
+                    <div class="shortcuts">
+                        <button class="port1" onclick="port1func()">1</button>
+                        <button class="port2" onclick="port2func()">2</button>
+                        <button class="port3" onclick="port3func()">3</button>
+                        <button class="port4" onclick="port4func()">4</button>
+                        <button class="port5" onclick="port5func()">5</button>
+                        <button class="port6" onclick="port6func()">6</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port3-content">
+                <div class="numsys">
+                    <h2>What are number systems?</h2>
+                <ul>
+                    <li><p>A numeral system is a writing system for expressing numbers; it is a
+                        mathematical notation for consistently representing numbers in a set using
+                        digits or other symbols (Robert, 2022).
+                    </p></li>
+                    <li><p>Number systems are conventional systems of signs (i.e., words, digits) that
+                        have representational and analytical meanings (Lehman et al., 2013).
+                    </p></li>
+                    <li><p>Number systems are formal systems for representing and manipulating
+                        numbers, including binary, decimal, and hexadecimal systems, which are
+                        essential in computer science (Nunes & Bryant, 2022).
+                    </p></li>
+                </ul>
+                </div>
+
+                <div class="histnum">
+                    <h2>Brief History of Number Sytems</h2>
+                    <p><strong>Ancient Tally Marks</strong></p>
+                    <ul>
+                        <li><p>The earliest form of number representation, using simple tally marks for counting and record-keeping.</p></li>
+                        <li><p>These marks were often carved on bones or stones.</p></li>
+                    </ul>
+
+                    <p><strong>Babylonian and Egyptian Systems:</strong></p>
+                    <ul>
+                        <li><p>The Babylonians used a base-60 (sexagesimal) number system around 2000 BCE, influencing astronomical calculations.</p></li>
+                        <li><p>The Egyptians used a base-10 (decimal) system for administrative and construction purposes, represented with hieroglyphs.</p></li>
+                    </ul>
+
+                    <p><strong>Greek and Roman Numerals</strong></p>
+                    <ul>
+                        <li><p>The Greeks modified the Egyptian system, introducing alphabetic numerals and the concept of zero and place value.</p></li>
+                        <li><p>The Romans used a letter-based system (I, V, X, L, C, D, M) for trade and engineering.</p></li>
+                    </ul>
+
+                    <p><strong>Hindu-Arabic Numerals</strong></p>
+                    <ul>
+                        <li><p>Developed in India around the 6th century CE, introducing zero and positional notation.</p></li>
+                        <li><p>This system was later transmitted to the Islamic world and Europe, forming the foundation of the modern decimal system.</p></li>
+                    </ul>
+
+                    <p><strong>Non-European Contributions</strong></p>
+                    <ul>
+                        <li><p>The Mayans developed a vigesimal (base-20) system.</p></li>
+                        <li><p>The Chinese used a rod numeral system for calculations.</p></li>
+                    </ul>
+
+                    <p><strong>Modern Digital Systems</strong></p>
+                    <ul>
+                        <li><p>With the rise of computers, binary (base-2), octal (base-8), and hexadecimal (base-16) systems became crucial for digital computing and data representation.</p></li>
+                    </ul>
+                </div>
+
+                <div class="compnum">
+                    <h2>Components of Number Systems</h2>
+                    <p><strong>Base (or Radix)</strong></p>
+                    <ul>
+                        <li><p>Determines the number of unique digits, including zero, used in the system.</p></li>
+                        <li><p>Example:</p></li>
+                        <ul>
+                            <li><p>Decimal system (base 10): Digits 0-9</p></li>
+                            <li><p>Binary system (base 2): Digits 0 and 1</p></li>
+                        </ul>
+                    </ul>
+
+                    <p><strong>Digits</strong></p>
+                    <ul>
+                        <li><p>Symbols used to represent numbers in a system.</p></li>
+                        <li><p>Each digit's value depends on its position and the base of the system.</p></li>
+                        <li><p>Example:</p></li>
+                        <ul>
+                            <li><p>In the decimal system, digits range from 0 to 9.</p></li>
+                        </ul>
+                    </ul>
+
+                    <p><strong>Positional Value</strong></p>
+                    <ul>
+                        <li><p>The value of a digit depends on its position in the number and the base.</p></li>
+                        <li><p>Each position represents a power of the base.</p></li>
+                        <li><p>Example:</p></li>
+                        <ul>
+                            <li><p>In the number 345:</p></li>
+                            <ul>
+                                <li><p>5 is in the units place (base^0)</p></li>
+                                <li><p>4 is in the tens place (base^1)</p></li>
+                                <li><p>3 is in the hundreds place (base^2)</p></li>
+                            </ul>
+                        </ul>
+                    </ul>
+
+                    <p><strong>Arithmetic Operations</strong></p>
+                    <ul>
+                        <li><p>Rules for performing arithmetic operations like addition, subtraction, multiplication, and division.</p></li>
+                        <li><p>These operations depend on the base and positional values.</p></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="reference-cont">
+                <h2>Reference</h2>
+                <div class="references">
+                    <div class="reference-item">
+                        Boyer, C. B., & Merzbach, U. C. (2011). <i>A History of Mathematics</i> (3rd ed.). Wiley. 
+                        <a href="https://archive.org/details/historyofmathema0000boye" target="_blank">https://archive.org/details/historyofmathema0000boye</a>
+                    </div>
+                    <div class="reference-item">
+                        Bryant, R. E. (2018). Binary decision diagrams. In <i>Springer eBooks</i> (pp. 191–217). 
+                        <a href="https://doi.org/10.1007/978-3-319-10575-8_7" target="_blank">https://doi.org/10.1007/978-3-319-10575-8_7</a>
+                    </div>
+                    <div class="reference-item">
+                        Cox, D. R., & Snell, E. J. (2008). Analysis of binary data. In <i>Springer eBooks</i> (pp. 4–5). 
+                        <a href="https://doi.org/10.1007/978-0-387-32833-1_5" target="_blank">https://doi.org/10.1007/978-0-387-32833-1_5</a>
+                    </div>
+                    <div class="reference-item">
+                        Donzellini, G., Oneto, L., Ponta, D., & Anguita, D. (2019). Numeral Systems and Binary Arithmetic. In <i>Introduction to Digital Systems Design</i> (pp. 35-50). Springer. 
+                        <a href="https://doi.org/10.1007/978-3-319-92804-3_3" target="_blank">https://doi.org/10.1007/978-3-319-92804-3_3</a>
+                    </div>
+                    <div class="reference-item">
+                        Hennessy, J. L., & Patterson, D. A. (2019). <i>Computer Architecture: A Quantitative Approach</i> (6th ed.). Morgan Kaufmann. 
+                        <a href="https://dl.acm.org/doi/book/10.5555/1999263" target="_blank">https://dl.acm.org/doi/book/10.5555/1999263</a>
+                    </div>
+                    <div class="reference-item">
+                        Ifrah, G. (2000). <i>The Universal History of Numbers: From Prehistory to the Invention of the Computer</i>. Wiley. 
+                        <a href="https://archive.org/details/universalhistory0000ifra" target="_blank">https://archive.org/details/universalhistory0000ifra</a>
+                    </div>
+                    <div class="reference-item">
+                        Joseph, G. G. (2011). <i>The Crest of the Peacock: Non-European Roots of Mathematics</i> (3rd ed.). Princeton University Press. 
+                        <a href="https://press.princeton.edu/books/paperback/9780691135267/the-crest-of-the-peacock" target="_blank">https://press.princeton.edu/books/paperback/9780691135267/the-crest-of-the-peacock</a>
+                    </div>
+                    <div class="reference-item">
+                        Lehman, E., Leighton, F. T., & Meyer, A. R. (2013). <i>Mathematics for Computer Science</i>. MIT Press. 
+                        <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2005/readings/" target="_blank">https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-042j-mathematics-for-computer-science-fall-2005/readings/</a>
+                    </div>
+                    <div class="reference-item">
+                        Erle, M. A., Schwarz, E. M., & Schulte, M. J. (2005). Decimal multiplication with efficient partial product generation. 17th IEEE Symposium on Computer Arithmetic (ARITH'05), Cape Cod, MA, USA, 21-28. 
+                        <a href="https://doi.org/10.1109/ARITH.2005.15" target="_blank">https://doi.org/10.1109/ARITH.2005.15</a>
+                    </div>
+                    <div class="reference-item">
+                        Niven, I., Zuckerman, H. S., & Montgomery, H. L. (1991). <i>An Introduction to the Theory of Numbers</i> (5th ed.). John Wiley & Sons. 
+                        <a href="https://archive.org/details/introductiontotheoryofnumbers" target="_blank">https://archive.org/details/introductiontotheoryofnumbers</a>
+                    </div>
+                    <div class="reference-item">
+                        Nunes, T., & Bryant, P. (2023). Number systems as models of quantitative relations. In <i>Quantitative Reasoning in Mathematics and Science Education</i> (pp. 71-105). Springer. 
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-14553-7_4" target="_blank">https://link.springer.com/chapter/10.1007/978-3-031-14553-7_4</a>
+                    </div>
+                    <div class="reference-item">
+                        O’Regan, G. (2018). <i>The Innovation in Computing Companion</i>. In Springer eBooks. 
+                        <a href="https://doi.org/10.1007/978-3-030-02619-6" target="_blank">https://doi.org/10.1007/978-3-030-02619-6</a>
+                    </div>
+                    <div class="reference-item">
+                        Patterson, D. A., & Hennessy, J. L. (2019). <i>Computer Organization and Design: The Hardware/Software Interface</i> (5th ed.). Morgan Kaufmann. 
+                        <a href="https://dl.acm.org/doi/10.5555/3027670" target="_blank">https://dl.acm.org/doi/10.5555/3027670</a>
+                    </div>
+                    <div class="reference-item">
+                        Robert, W. (2022). An overview of number system. <i>Open Access Journals</i>. 
+                        <a href="https://doi.org/10.4172/JStatsMathSci.8.4.002" target="_blank">https://doi.org/10.4172/JStatsMathSci.8.4.002</a>
+                    </div>
+                    <div class="reference-item">
+                        Rosen, K. H. (2012). <i>Discrete Mathematics and Its Applications</i> (7th ed.). McGraw-Hill Education. 
+                        <a href="https://archive.org/details/discretemathematicsanditsapplications7th" target="_blank">https://archive.org/details/discretemathematicsanditsapplications7th</a>
+                    </div>
+                    <div class="reference-item">
+                        Roy, S. (2023). Binary Number System. In <i>Springer eBooks</i> (pp. 1–14). 
+                        <a href="https://doi.org/10.1007/978-3-031-41085-7_1" target="_blank">https://doi.org/10.1007/978-3-031-41085-7_1</a>
+                    </div>
+                    <div class="reference-item">
+                        Sarton, G. (1950). Decimal Systems Early and Late. <i>Osiris, 9,</i> 581–601. 
+                        <a href="http://www.jstor.org/stable/301860" target="_blank">http://www.jstor.org/stable/301860</a>
+                    </div>
+                    <div class="reference-item">
+                        Stallings, W. (2017). <i>Computer Security: Principles and Practice</i> (4th ed.). Pearson. 
+                        <a href="https://archive.org/details/computersecurity0000stal" target="_blank">https://archive.org/details/computersecurity0000stal</a>
+                    </div>
+                    <div class="reference-item">
+                        Strickland, L., & Jones, O. D. (2022). F Things you (Probably) didn’t know about hexadecimal. <i>The Mathematical Intelligencer, 45(2),</i> 126–130. 
+                        <a href="https://doi.org/10.1007/s00283-022-10206-w" target="_blank">https://doi.org/10.1007/s00283-022-10206-w</a>
+                    </div>
+                    <div class="reference-item">
+                        Verhulst, B., & Neale, M. C. (2021). Best practices for binary and ordinal data analyses. <i>Behavior Genetics, 51(3),</i> 204–214. 
+                        <a href="https://doi.org/10.1007/s10519-020-10031-x" target="_blank">https://doi.org/10.1007/s10519-020-10031-x</a>
+                    </div>
+                    <div class="reference-item">
+                        Vrana, J., & Singh, R. (2022). Digitization, digitalization, and digital transformation. In <i>Springer eBooks</i> (pp. 107–123). 
+                        <a href="https://doi.org/10." target="_blank">https://doi.org/10.1007/978-3-030-73206-6_39</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="home.js"></script>
+</body>
+</html>

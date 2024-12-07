@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web.bev</title>
+  <link rel="stylesheet" href="ahom.css">
+</head>
+<body>
+    <video autoplay loop muted plays-inline class="bg-clip">
+        <source src="yes.mov" type="mov">
+    </video>
+    <section class="container">
+
+        <section class="navbar-container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <h2 class="name">
+                        <span class="web">WEB.</span><span class="bev">BEV</span>
+                    </h2>
+                </div>
+        
+                <div class="buttons">
+                    <button class="home" onclick="homefunc()" id="home">Home</button>
+                    <button class="aboutme" onclick="aboutmefunc()" id="aboutme">About Me</button>
+                    <button class="portfolio" onclick="portfoliofunc()" id="portfolio">Portfolio</button>
+                    <button class="contact" onclick="contactfunc()" id="contact">Contact</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="main-page">
+
+            <div class="my-head">
+                <div class="head-content">
+                    <h2>Portfolio No. 2</h2>
+                    <h1>Data, Information, and Information Sytems</h1>
+                    <div class="shortcuts">
+                        <button class="port1" onclick="port1func()">1</button>
+                        <button class="port2" onclick="port2func()">2</button>
+                        <button class="port3" onclick="port3func()">3</button>
+                        <button class="port4" onclick="port4func()">4</button>
+                        <button class="port5" onclick="port5func()">5</button>
+                        <button class="port6" onclick="port6func()">6</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="port2-content">
+                <div class="cont-data">
+                    <h2>
+                        Data<br>
+                    </h2>
+                    <ul>
+                        <li><p>• Data comprises raw, unorganized factual information that is required to be processed. Data can be simple, random, and useless until it is organized (In & Lee, 2017).</p></li>
+                        <li><p>• Data are facts or information that are examined and used to find out things or make decisions. It includes not just what is said but also how it is communicated and the context of its collection (Olson, 2021).</p></li>                                    
+                    </ul>
+                </div>
+
+                <div class="cont-types">
+                
+                    <h2>TYPES OF DATA</h2>
+                    <div class="types-grid">
+                        <div class="type-card">
+                            <h3>QUALITATIVE/<br>CATEGORICAL DATA</h3>
+                            <p>
+                                Qualitative or categorical data consists of variables that cannot be 
+                                quantified numerically. Instead, these variables need to be classified 
+                                into categories without any notion of size or magnitude. They can be 
+                                represented in various forms, including auditory, visual, symbolic, 
+                                perceptual, or textual.
+                            </p>
+                            <p>
+                                Examples: Gender, patient perceptions, preferences for hospital visits, colors.
+                            </p>
+                        </div>
+                        <div class="type-card">
+                            <h3 class="num">NUMERICAL DATA</h3>
+                            <p>
+                                Quantitative or numerical data is represented by numbers, allowing for counting 
+                                and measurement. This data answers questions such as "How much?", "How many?", 
+                                or "How often?".
+                            </p>
+                            <p>
+                                Examples: Weight, temperature, scores, length of surgery.
+                            </p>
+                        </div>
+                    </div>
+                
+                    <div class="scale-grid">
+                        <div class="scale-card">
+                            <h4>Nominal Scale</h4>
+                            <p>Example: Gender, hair color.</p>
+                        </div>
+                        <div class="scale-card">
+                            <h4>Ordinal Scale</h4>
+                            <p>Example: Education level, exam grades.</p>
+                        </div>
+                        <div class="scale-card">
+                            <h4>Discrete</h4>
+                            <p>Example: Number of patients.</p>
+                        </div>
+                        <div class="scale-card">
+                            <h4>Continuous</h4>
+                            <p>Example: Height, weight, speed.</p>
+                        </div>
+                    </div>     
+                </div>
+
+                <div class="how-cont">
+                    <img src="how.png">
+                </div>
+
+                <div class="info-cont">
+                    <h2>Information<br></h2>
+                    <ul>
+                        <li><p>Information is created by processing and interpreting 
+                            data to give it context and significance. It turns raw 
+                            data into a meaningful format that aids in decision-making 
+                            and problem-solving. Essentially, information is data that 
+                            has been organized and presented in a way that adds value 
+                            and relevance (In & Lee, 2017).
+                        </p></li>
+                    </ul>
+                    <ul>
+                        <li><p>
+                            Information refers to the process of gathering, combining, 
+                            analyzing, and presenting data to create understanding. 
+                            While this definition outlines how information is derived 
+                            from data, it doesn't fully explain what information actually is. 
+                            Information is essentially data placed in context. It is data 
+                            that have been processed to clarify their meaning. Once data 
+                            are collected and contextualized, they become information. 
+                            Therefore, while all information is derived from data, not 
+                            all data qualify as information (Dammann, 2019) .
+                        </p></li>
+                    </ul>
+                </div>
+                
+                <div class="datavsinfo">
+
+                    <h2>Data vs Information</h2>
+
+                    <div class="vs-grid">
+                        <div class="vs-card">
+                            <h3>DATA</h3>
+                            <ul>
+                                <li><p>• Numbers, Symbols, Text, Images, Sound recordings, Unit values</p></li>
+                                <li><p>• Collected from field research, database, measurements in 
+                                    experiments, from individuals, populations</p></li>
+                                <li><p>• From Data Collector</p></li>
+                                <li><p>• Use as raw data or for information generation, storage, curation, retrieval</p></li>
+                                <li><p>• Data can be structured, tabular data, graph, data tree</p></li>
+                            </ul>
+                        </div>
+    
+                        <div class="vs-card">
+                            <h3>INFORMATION</h3>
+                            <ul>
+                                <li><p>• Data in context</p></li>
+                                <li><p>• Contextualization by making data useful, and using them, for specific tasks</p></li>
+                                <li><p>• From Informatician, informaticist, statistician, data scientist</p></li>
+                                <li><p>• Use as source for answering questions, storage, curation, retrieval</p></li>
+                                <li><p>• Information is language, ideas, and thoughts based on the given data</p></li>
+                            </ul>                        
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="cont-data">
+                    <h2>
+                        Information Systems<br>
+                    </h2>
+                    <ul>
+                        <li><p>• Information Systems (IS) is an emerging discipline that integrates technology, people, and processes to manage and analyze data for decision-making and operational efficiency (Mazaheri et al., 2020).</p></li>
+                        <li><p>• Information Systems (IS) facilitate the collection, storage, processing, and dissemination of information to improve efficiency and effectiveness in business operations (Avison & Fitzgerald, 1988).</p></li>   
+                        <li><p>• Information systems began to emerge in the 1960s, initially focusing on programming rather than user needs and lacking formal methodologies. This led to the creation of structured methodologies in 
+                            the 1970s to address these issues (Avison & Fitzgerald, 1988).</p></li>  
+                        <li><p>• Organizations increasingly view Information Systems (IS) as a means to gain competitive advantage, not just for improving existing processes but also for offering new services and products (Avison & Fitzgerald, 1988).</p></li>                               
+                    </ul>
+                </div>
+
+                <div class="infosystem">
+                    <!-- Components of Information System Section -->
+                    <div class="section" id="components">
+                        <h3>Components of Information System</h3>
+                        <p>Information systems are comprised of five components: hardware, 
+                            software, data, people, and processes. Although hardware, software, 
+                            and data are often the primary focus when defining information systems, 
+                            it is the inclusion of people and processes that differentiates this 
+                            field from more technical disciplines like computer science. To fully 
+                            understand information systems, it is important to comprehend how all 
+                            these components work together to provide value to an organization (Bourgeois, 2020).
+                        </p>
+            
+                        <p><strong>Technology</strong></p>
+                        <p>Technology can be understood as the use of scientific knowledge for 
+                            practical applications. From the creation of the wheel to the use 
+                            of electricity for lighting, technology plays a significant role in 
+                            our lives, often going unappreciated. The first three components of 
+                            information systems: hardware, software, and data are all considered part 
+                            of this technological domain.
+                        </p>
+            
+                        <p><strong>Hardware</strong></p>
+                        <p>Information systems hardware refers to the tangible, physical components 
+                            of the technology that you can touch. Examples of hardware include 
+                            computers, keyboards, disk drives, iPads, and flash drives.
+                        </p>
+
+                        <p><strong>Software</strong></p>
+                        <p>
+                            Software consists of instructions that control hardware. It is intangible 
+                            and comes in two main types: operating-system software, which enables 
+                            hardware to function, and application software, which performs specific 
+                            tasks. Examples include Microsoft Windows and Android for operating systems, 
+                            and Microsoft Excel and Angry Birds for applications.
+                        </p>
+
+                        <p><strong>Data</strong></p>
+                        <p>
+                            The third component is data, which consists of facts like your address and 
+                            phone number. Although data itself is intangible and not very useful alone, 
+                            when organized in a database, it becomes a valuable tool for businesses. 
+                            Organizations use data to make and analyze decisions, which helps improve their operations.
+                        </p>
+
+                        <p><strong>Network Communication</strong></p>
+                        <p>
+                            In addition to hardware, software, and data, communication is now recognized
+                            as a vital component of information systems. Early personal computers 
+                            were stand-alone and lacked network connectivity, but today’s systems 
+                            are almost always connected to other devices or networks. While networking 
+                            involves both hardware and software, its central role in modern 
+                            systems has led to its classification as a distinct category.
+                        </p>
+
+                        <p><strong>Process</strong></p>
+                        <p>
+                            The final component is process, which includes steps to achieve goals. 
+                            Integrating information systems with organizational processes improves 
+                            productivity and control. Effective use involves enhancing processes 
+                            internally and with external partners, using concepts like "business 
+                            process reengineering" and "enterprise resource planning" to gain a competitive advantage.
+                        </p>
+
+                        <p><strong>People</strong></p>
+                        <p>
+                            In information systems, it's crucial to consider not just the technology 
+                            but also the people involved. From help-desk staff and systems 
+                            analysts to programmers and the chief information officer (CIO), these 
+                            individuals play an essential role in integrating and managing information 
+                            systems within an organization.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="info-types">
+                    <div class="section" id="types">
+                        <h2>Types of Information Systems</h2>
+                        <p>Information systems began to emerge in the 1960s, initially focusing on programming rather than user needs and lacking formal methodologies. This led to the creation of structured methodologies in the 1970s to address these issues (Al-Mamary et al., 2014).</p>
+            
+                        <h3>Transaction Processing System (TPS)</h3>
+                        <ul>
+                            <li><p>• TPS are foundational systems that manage and process data generated by daily business transactions.</p></li>
+                            <li><p>• Designed to handle large volumes of routine, repetitive tasks efficiently and accurately, ensuring smooth business operations.</p></li>
+                        </ul>
+                        <p><strong>• Key Characteristics:</strong></p>
+                        <ul>
+                            <li><p>· Process transactions in real time, allowing immediate database updates.</p></li>
+                            <li><p>· Essential in environments like retail and banking where timely information is crucial.</p></li>
+                            <li><p>· High reliability and accuracy are required to prevent operational disruptions, financial discrepancies, and customer dissatisfaction.</p></li>
+                            <li><p>· Maintain detailed records of transactions, which can be used for reporting, auditing, and analysis.</p></li>
+                        </ul>
+                        <p><strong>• Examples:</strong></p>
+                        <ul>
+                            <li><p>· Point of Sale (POS) Systems: Used in retail to process sales, manage inventory, and track customer purchases.</p></li>
+                            <li><p>· Payroll Systems: Automate employee wages, deductions, and tax withholdings for timely and accurate payroll processing.</p></li>
+                            <li><p>· Banking Transaction Systems: Handle deposits, withdrawals, and transfers, maintaining accurate account balances and transaction histories.</p></li>
+                        </ul>
+                
+                        <h3>Management Information Systems (MIS)</h3>
+                        <ul>
+                            <li><p>• MIS help middle management by providing the information necessary for decision-making and strategic planning.</p></li>
+                            <li><p>• They process data from various sources (e.g., TPS) to create regular reports that summarize operational performance.</p></li>
+                        </ul>
+                
+                        <p><strong>• Key Characteristics:</strong></p>
+                        <ul>
+                            <li><p>· Produce structured reports to monitor key performance metrics such as sales, inventory, and employee productivity.</p></li>
+                            <li><p>· Provide valuable insights, though not as interactive as DSS, for identifying trends and areas for improvement.</p></li>
+                            <li><p>· Aggregate data from different departments to offer a comprehensive view of organizational performance.</p></li>
+                        </ul>
+                        <p><strong>• Examples:</strong></p>
+                        <ul>
+                            <li><p>· Sales Management Systems: Track sales performance, generate forecasts, and analyze sales trends for marketing strategies.</p></li>
+                            <li><p>· Inventory Control Systems: Monitor stock levels, manage reorder points, and analyze inventory turnover to optimize management.</p></li>
+                            <li><p>· Human Resource Management Systems (HRMS): Manage employee data, payroll, and performance evaluations.</p></li>
+                        </ul>
+                
+                        <h3>Decision Support Systems (DSS)</h3>
+                        <ul>
+                            <li><p>• DSS are interactive software systems that help managers make decisions in semi-structured or unstructured situations.</p></li>
+                            <li><p>• They combine data, analytical models, and user-friendly software to support decision-making processes.</p></li>
+                        </ul>
+                
+                        <p><strong>• Key Characteristics:</strong></p>
+                        <ul>
+                            <li><p>· Allow users to manipulate data and models to explore different scenarios and outcomes, fostering a deeper understanding of the data.</p></li>
+                            <li><p>· Include tools for data analysis, forecasting, and simulation, which enable managers to evaluate alternatives.</p></li>
+                            <li><p>· Active user involvement in decision-making helps assess potential outcomes.</p></li>
+                        </ul>
+                
+                        <p><strong>• Examples:</strong></p>
+                        <ul>
+                            <li><p>· Financial Planning Systems: Assist with budgeting, forecasting, and financial analysis to evaluate investment opportunities and risks.</p></li>
+                            <li><p>· Marketing Analysis Tools: Analyze customer data, market trends, and competitor intelligence to inform marketing strategies.</p></li>
+                            <li><p>· Supply Chain Management Systems: Optimize inventory, manage supplier relationships, and improve logistics for better supply chain efficiency.</p></li>
+                        </ul>
+                
+                        <h3>Executive Information Systems (EIS)</h3>
+                        <ul>
+                            <li><p>• EIS are specialized systems designed for top executives to access internal and external information relevant to their strategic goals.</p></li>
+                            <li><p>• They present data in highly summarized formats, often through dashboards, to enable quick decision-making.</p></li>
+                        </ul>
+                
+                        <p><strong>• Key Characteristics:</strong></p>
+                        <ul>
+                            <li><p>· Provide a broad view of organizational performance through visualizations like charts, graphs, and dashboards.</p></li>
+                            <li><p>· Present real-time data for executives to make timely decisions based on current information.</p></li>
+                            <li><p>· Tailored to support strategic planning and long-term decision-making, aligning with organizational goals.</p></li>
+                        </ul>
+                
+                        <p><strong>• Examples:</strong></p>
+                        <ul>
+                            <li><p>· Corporate Performance Dashboards: Aggregate data from various sources to provide real-time views of organizational performance, including financial and operational metrics.</p></li>
+                            <li><p>· Market Trend Analysis Tools: Analyze external data, such as economic indicators and competitor performance, to inform strategic planning.</p></li>
+                            <li><p>· Financial Forecasting Systems: Offer insights into future financial performance, using historical data and predictive analytics to guide decisions.</p></li>
+                        </ul>                             
+                    </div>      
+                </div>
+
+                <div class="reference-cont">
+                    <h2>Reference</h2>
+                    <div class="references">
+                        <div class="reference-item">
+                            Alter, S. (2008). Defining information systems as work systems: implications for the IS field. <i>European Journal of Information Systems, 17(5),</i> 448–469. 
+                            <a href="https://doi.org/10.1057/ejis.2008.37" target="_blank">https://doi.org/10.1057/ejis.2008.37</a>
+                        </div>
+                        <div class="reference-item">
+                            Al-Tuhaifi, M. S. (2024). Information system types at various management levels in contemporary organizations: An Overview. 
+                            <a href="https://ijrjournal.com/index.php/ijr/article/view/1267" target="_blank">https://ijrjournal.com/index.php/ijr/article/view/1267</a>
+                        </div>
+                        <div class="reference-item">
+                            Avison, D., & Fitzgerald, G. (1988). Information systems development: Current themes and future directions. <i>Information and Software Technology, 30(8),</i> 458–466. 
+                            <a href="https://doi.org/10.1016/0950-5849(88)90142-5" target="_blank">https://doi.org/10.1016/0950-5849(88)90142-5</a>
+                        </div>
+                        <div class="reference-item">
+                            Bourgeois, D. (2020). Components of an information System. <i>Engineering LibreTexts.</i> 
+                            <a href="https://eng.libretexts.org/Courses/Delta_College/CS11_-_Informations_Systems/01%3A_What_is_an_Information_System/1.01.01%3A_Introduction_to_Information_Systems/1.1A%3A_Components_of_an_Information_System" target="_blank">https://eng.libretexts.org</a>
+                        </div>
+                        <div class="reference-item">
+                            Filip, F. (2007). MANAGEMENT INFORMATION SYSTEMS: Managing the Digital Firm - 9th edition, authors: Keneth C. Laudon and Jane P. Laudon (Book Review). <i>International Journal of Computers Communications & Control, 2(1),</i> 103. 
+                            <a href="https://doi.org/10.15837/ijccc.2007.1.2342" target="_blank">https://doi.org/10.15837/ijccc.2007.1.2342</a>
+                        </div>
+                        <div class="reference-item">
+                            In, J., & Lee, S. (2017). Statistical data presentation. <i>Korean Journal of Anesthesiology, 70(3),</i> 267. 
+                            <a href="https://doi.org/10.4097/kjae.2017.70.3.267" target="_blank">https://doi.org/10.4097/kjae.2017.70.3.267</a>
+                        </div>
+                        <div class="reference-item">
+                            Joergensen, P. N., & Zaggl, M. (2024). The role of data science and data analytics for innovation: a literature review. <i>Journal of Business Analytics,</i> 1–17. 
+                            <a href="https://doi.org/10.1080/2573234x.2024.2365917" target="_blank">https://doi.org/10.1080/2573234x.2024.2365917</a>
+                        </div>
+                        <div class="reference-item">
+                            Mazaheri, Elham & Mehraeen, Mohammad & Hemmat, Zahra. (2020). Research Directions in information Systems Field, Current Status and Future Trends: A Meta-Analysis of AIS Basket of Top Journals. <i>Australasian Journal of Information Systems, 24.</i> 
+                            <a href="https://doi.org/10.3127/ajis.v24i0.2045" target="_blank">https://doi.org/10.3127/ajis.v24i0.2045</a>
+                        </div>
+                        <div class="reference-item">
+                            Olson, K. (2021). What are data? <i>Qualitative Health Research, 31(9),</i> 1567–1569. 
+                            <a href="https://doi.org/10.1177/10497323211015960" target="_blank">https://doi.org/10.1177/10497323211015960</a>
+                        </div>
+                        <div class="reference-item">
+                            Ragowsky, A., Ahituv, N., & Neumann, S. (1996). Identifying the value and importance of an information system application. <i>Information & Management, 31(2),</i> 89–102. 
+                            <a href="https://doi.org/10.1016/s0378-7206(96)01072-5" target="_blank">https://doi.org/10.1016/s0378-7206(96)01072-5</a>
+                        </div>
+                        <div class="reference-item">
+                            Dammann, O. (2019). Data, Information, Evidence, and Knowledge: A proposal for Health Informatics and Data Science. <i>Online Journal of Public Health Informatics, 10(3).</i> 
+                            <a href="https://doi.org/10.5210/ojphi.v10i3.9631" target="_blank">https://doi.org/10.5210/ojphi.v10i3.9631</a>
+                        </div>
+                        <div class="reference-item">
+                            Salem Al-Mamary, Yaser Hasan & Shamsuddin, Alina & Aziati. (2014). The Role of Different Types of Information Systems in Business Organizations: A review. <i>ResearchGate, 1,</i> 1279–1286. 
+                        </div>
+                        <div class="reference-item">
+                            Shukla, Durgesh. (2023). A narrative review on types of data and scales of measurement: An initial step in the statistical analysis of medical data. <i>Cancer Research, Statistics, and Treatment, 6,</i> 279–283. 
+                            <a href="https://doi.org/10.4103/crst.crst_1_23" target="_blank">https://doi.org/10.4103/crst.crst_1_23</a>
+                        </div>
+                        <div class="reference-item">
+                            Taherdoost, H. (2022). The role of different types of management information system applications in business development: Concepts, and limitations. 
+                            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4285861" target="_blank">https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4285861</a>
+                        </div>
+                        <div class="reference-item">
+                            Wang, T., Vonk, J., Kratz, B., & Grefen, P. (2008). A survey on the history of transaction management: from flat to grid transactions. <i>Distributed and Parallel Databases, 23(3),</i> 235–270. 
+                            <a href="https://doi.org/10.1007/s10619-008-7028-1" target="_blank">https://doi.org/10.1007/s10619-008-7028-1</a>
+                        </div>
+                    </div>
+                </div>
+
+        </section>
+    </section>
+    <script src="home.js"></script>
+</body>
+</html>

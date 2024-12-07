@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>web.bev</title>
+  <link rel="stylesheet" href="ahom.css">
+</head>
+<body>
+
+    <section class="container">
+        <section class="navbar-container">
+            <div class="navbar-content">
+                <div class="logo">
+                    <h2 class="name">
+                        <span class="web">WEB.</span><span class="bev">BEV</span>
+                    </h2>
+                </div>
+        
+                <div class="buttons">
+                    <button class="home" onclick="homefunc()" id="home">Home</button>
+                    <button class="aboutme" onclick="aboutmefunc()" id="aboutme">About Me</button>
+                    <button class="portfolio" onclick="portfoliofunc()" id="portfolio">Portfolio</button>
+                    <button class="contact" onclick="contactfunc()" id="contact">Contact</button>
+                </div>
+            </div>
+        </section>
+            
+        <section class="main-page">
+            <div class="int-cont">
+                <div class="name-intro">
+                    <h2>WEB.BEV</h2>
+                    <p>
+                        Welcome to my website! 
+                        Here, you will find my portfolio for the Introduction to Computing,
+                        with information on various topics from the course. 
+                        Thank you so much for visiting!
+                    </p>
+                </div>
+            </div>
+
+            <div class="about-section">
+                <div class="bout-head">
+                    <h2>About Me</h2>
+                </div>
+                <div class="boutme-card">
+                    <div class="words">
+                        <div class="myname">
+                            <h2>Osbev Erica Cabucos</h2>
+                        </div>
+                        <div class="intro-me">
+                            <p>
+                                I am a student from the University of San Carlos. 
+                                This website contains my portfolios for Introduction to Computing. 
+                                Enjoy my website and have fun learning!
+                            </p>
+                        </div>
+                        <div class="read-more">
+                            <button class="more-about" onclick="aboutmefunc()">More About Me</button>
+                        </div>
+                    </div>
+                    <div class="my-photo">
+                        <img src="myimg.png" alt="my-img">
+                    </div>
+                </div>
+            </div>
+
+            <div class="port-section">
+                <div class="port-head">
+                    <h2>My Portfolios</h2>
+                </div>
+                <div class="port-sneak">
+                    <div class="cont-port">
+                        <div class="see-button">
+                            <button class="see-all" onclick="portfoliofunc()">See All</button>
+                        </div>
+                        
+                        <div class="three-port">
+                            <div class="portcard">
+                                <img src="1.jpg" alt="Portfolio 1">
+                            </div>
+                            <div class="portcard">
+                                <a href="port2.html" class="portcard">
+                                    <img src="2.jpg" alt="Portfolio 2">
+                                </a>
+                            </div>
+                            <div class="portcard">
+                                <img src="3.jpg" alt="Portfolio 3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <div class="footer">
+                    <p class="copyright">© Osbev Erica Cabucos</p>
+                </div>
+            </div>
+        </section>
+    </section>
+  <script src="home.js"></script>
+</body>
+</html>

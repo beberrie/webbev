@@ -1,0 +1,1508 @@
+@font-face {
+    font-family: 'welcome';
+    src: url('welcome.ttf') format('truetype'),
+         url('welcome.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ledlight';
+    src: url('LEDLIGHT.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+@font-face {
+    font-family: 'stretch';
+    src: url('StretchPro.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'write';
+    src: url('write.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'akira';
+    src: url('akira.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'comf-bold';
+    src: url('comf-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'comf-light';
+    src: url('comf-light.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'comf-reg';
+    src: url('comf-reg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'mont';
+    src: url('mont.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', 'sans-serif';
+    background:/* #494949#2f2f2f*/#313030;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.video-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+  }
+  
+  video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
+
+.bg-clip {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 20px; 
+    overflow: hidden;
+    gap: 15px;
+}
+
+.navbar-container {
+    flex: 0.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70vw;
+}
+
+.logo .name {
+    justify-content: center;
+    font-size: 1.8vw;
+    font-family: 'stretch';
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px; 
+}
+
+.buttons button {
+    font-family: 'comf-bold';
+    background: none;
+    border: none;
+    font-size: 1.1vw;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+.buttons button:hover {
+    color: #a7b1ca;
+}
+
+.buttons button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #a7b1ca;
+    transition: width 0.4s ease;
+    margin-top: 5px;
+}
+
+.buttons button:hover::after{
+    width: 100%;
+}
+
+.buttons button.active {
+    color: #a7b1ca; /* Change color to match your hover color */
+}
+
+.buttons button.active::after {
+    width: 100%; /* Make sure the underline is visible */
+}
+
+.main-page {
+    width: 100%;
+    flex: 0.9;
+    border-radius: 10px;
+    overflow-y: auto;
+    color: white;
+}
+
+.int-cont {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10vh;
+    background: linear-gradient(to bottom, #ffffff00, #000000);
+}
+.name-intro {
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 35vw;
+}
+
+.name-intro h2 {
+    font-family: 'mont';
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'akira';
+}
+
+.name-intro p {
+    font-family: 'comf-light';
+    font-size: 1vw;
+    line-height: 1.6;
+    color: #dcdcdc;
+}
+
+.about-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    padding: 20px 20px; 
+    background: black;
+}
+
+.bout-head {
+    text-align: left; 
+    color: white;
+    font-family: 'mont';
+    font-size: 1.2vw; 
+    width: 85%; 
+    padding: 5px 0; 
+    border-bottom: 1px solid #ffffff40; 
+    margin-bottom: 10px;
+}
+
+.bout-head h2 {
+    text-align: left;
+}
+
+.boutme-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to bottom, #66416200, #3e424b);
+    border-radius: 15px;
+    width: 85%;
+    transition: transform 0.3s ease;
+    height: 30vh;
+    padding: 0 15px;
+    overflow: hidden;
+}
+
+.boutme-card:hover {
+    transform: scale(1.02); 
+}
+
+.words {
+    flex: 1;
+    max-width: 60%;
+    color: white;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.words .myname h2 {
+    text-align: left;
+    font-family: 'mont';
+    font-size: 1.8vw;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.words .intro-me p {
+    font-family: 'comf-light';
+    font-size: 0.8vw;
+    line-height: 1.6;
+    color: #d3d3d3;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    align-self: flex-end;
+}
+
+.read-more button {
+    background: #3e424b59;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.read-more button:hover {
+    background: rgba(255, 255, 255, 0.525);
+    color: #352e46;
+}
+
+.my-photo {
+    flex: 0 1 25%; 
+    max-width: 25%;
+    margin-left: 0; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.my-photo img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.port-section {
+    background: linear-gradient(to bottom, #000000, #3e424b, #3e424b);
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8vh; 
+    padding: 20px 20px; 
+    padding-bottom: 10vh;
+    position: relative;
+    justify-content: center;
+    padding-top: 15vh;
+}
+
+.port-head {
+    text-align: left;
+    color: white;
+    font-family: 'mont';
+    font-size: 1.2vw;
+    width: 85%; 
+    padding: 5px 0; 
+    border-bottom: 1px solid #ffffff40; 
+    margin-bottom: 10px;
+}
+
+.port-head h2 { 
+    text-align: left;
+    margin: 0;
+}
+
+.port-sneak {
+    background: #0000005b;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 15px;
+    width: 85%;
+    height: 50vh;
+    padding: 20px;
+    position: relative;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+    gap: 20vh;
+}
+
+.cont-port {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    position: relative;
+}
+
+.three-port {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.see-button {
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+    align-self: flex-end; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.see-button .see-all {
+    font-family: 'comf-bold';
+    background: none;
+    border: none;
+    font-size: 1.2vw;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.see-button .see-all:hover {
+    color: #a7b1ca;
+}
+
+.see-button .see-all::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #a7b1ca;
+    transition: width 0.4s ease;
+    margin-top: 5px;
+}
+
+.see-button .see-all:hover::after {
+    width: 100%;
+}
+
+.portcard {
+    flex: 1;
+    background: linear-gradient(to bottom, #66416200, #3e424b);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+.portcard:hover {
+    transform: scale(1.03);
+}
+
+.portcard img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer-section {
+    width: 100%;
+    height: 12vh;
+    background: linear-gradient(to bottom, #3e424b, black);
+    text-align: center;
+    justify-items: center;
+    padding-top: 20px; 
+}
+
+.footer {
+    padding-top: 4vh;
+    font-family: 'comf-light';
+    justify-content: center;
+    text-align: center;
+    font-size: 0.6vw;
+    color: #ffffff80;
+}
+
+
+/* PORTFOLIOS HTML */
+
+.my-head {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10vh;
+    background: linear-gradient(to bottom, #ffffff00, #000000);
+}
+
+.head-content {
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 50vw;
+}
+
+.head-content h2 {
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: 'akira';
+}
+
+.head-content h1 {
+    font-size: 0.8vw;
+    font-family: 'akira';
+    margin-bottom: 8vh;
+}
+
+.shortcuts {
+    align-items: center;
+    text-align: center;
+    color: white;
+    width: 50vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-bottom: 1px solid #ffffff40;
+}
+
+.shortcuts button {
+    font-family: 'comf-bold';
+    font-size: 0.8vw;
+    border: none;
+    background: none;
+    color: whitesmoke;
+    cursor: pointer; 
+    position: relative;
+}
+
+.shortcuts button:hover {
+    color: #a7b1ca;
+}
+
+.shortcuts button::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #a7b1ca;
+    transition: width 0.4s ease;
+    margin-top: 5px;         
+}
+
+.shortcuts button:hover::after {
+    width: 100%;                 
+}
+
+
+.myport-cont {
+    padding-top: 30vh;
+    display: flex;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 5vh;
+    background: linear-gradient(to bottom, #000000, #3e424b);
+    padding-bottom: 15vh;
+    overflow: visible;
+}
+
+.port-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    position: relative;
+    width: 90%;
+    overflow: visible;
+}
+
+.port {
+    position: relative;
+    width: 300px;
+    height: 200px;
+}
+
+.card {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.8s ease;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px #3c3c3c3f;
+    backface-visibility: hidden;
+}
+
+.card.card1 {
+    z-index: 2; 
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(0); 
+}
+
+.port:hover .card.card1 {
+    z-index: 1; /* Push `card1` to the back */
+    opacity: 0; /* Hide when `card2` is shown */
+}
+
+.card.card2 {
+    z-index: 1;
+    background: whitesmoke;
+    color: black;
+    display: flex;
+    opacity: 0; /* Hide initially */
+    transform: scale(0.95); 
+}
+
+.port:hover .card.card2 {
+    transform: translateY(100%);
+    opacity: 1; /* Show on hover */
+    transform: scale(1); 
+}
+
+.content img {
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+    width:100%;
+    height:100%;
+}
+
+.content p {
+    font-size: 1rem;
+    margin: 0;
+    text-align: center;
+}
+
+/* PORT 2 */
+.port2-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #000000;
+}
+
+.port2-content p {
+    font-family: 'comf-light';
+}
+
+.cont-data {
+    width: 90%;
+    display: block; 
+    text-align: left; 
+    margin-bottom: 5vh;
+    border-bottom: 1px solid #ffffff40;
+}
+
+.cont-data h2 {
+    text-align: left;
+    font-size: 2rem; 
+    margin-bottom: 1rem; /* Add spacing between heading and list */
+}
+
+.cont-data ul {
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 2rem; /* Add spacing for bullets */
+}
+
+.cont-data ul li {
+    margin-bottom: 1rem; /* Add spacing between list items */
+    line-height: 1.6; /* Improve readability */
+}
+
+.cont-types {
+    width: 90%;
+    display: block; 
+    text-align: center; 
+    margin-bottom: 5vh;
+    border-bottom: 1px solid #ffffff40;
+}
+
+.types-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    gap: 2rem;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.type-card {
+    width: 45%;
+    background-color: #333333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex; /* Added flex to handle alignment */
+    flex-direction: column; /* Stack elements vertically */
+    text-align: justify;
+}
+
+
+.type-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5vh;
+    text-align: center;
+    color: whitesmoke; /* Highlighted title */
+    margin-bottom: 5vh;
+    border-bottom: 1px solid #ffffff40;
+    padding-bottom: 1rem;
+}
+
+.num {
+    font-size: 1.5rem;
+    margin-bottom: 5vh;
+    text-align: center;
+    color: whitesmoke; /* Highlighted title */
+    margin-bottom: 5vh;
+    border-bottom: 1px solid #ffffff40;
+    padding-bottom: 1rem;
+}
+
+.type-card p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: whitesmoke; /* Ensure visibility on dark background */
+    word-break: break-word;
+}
+
+.scale-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    gap: 1.5rem;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    margin-bottom: 5vh;
+}
+
+.scale-card {
+    width: 22%;
+    background-color: #333333;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.scale-card h4 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+.scale-card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.cont-types p {
+    margin-top: 2rem;
+    font-size: 1rem;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.how-cont {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.how-cont img {
+    width: 100%;
+    height: 100%;
+}
+
+.info-cont {
+    width: 90%;
+    display: block; 
+    text-align: left; 
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    border-top: 1px solid #ffffff40;
+    border-bottom: 1px solid #ffffff40;
+}
+
+.info-cont h2 {
+    font-size: 2rem; 
+    margin-bottom: 1rem; /* Add spacing between heading and list */
+}
+
+.info-cont ul {
+    list-style-type: disc; /* Use bullet points */
+    padding-left: 2rem; /* Add spacing for bullets */
+}
+
+.info-cont ul li {
+    margin-bottom: 1rem; /* Add spacing between list items */
+    line-height: 1.6; /* Improve readability */
+}
+
+.datavsinfo {
+    width: 90%;
+    display: block;
+    text-align: center;
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+    border-bottom: 1px solid #ffffff40;
+}
+
+.datavsinfo h2 {
+    padding-top: 5vh;
+    font-size: 2rem;
+    color: whitesmoke;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+}
+
+.vs-grid {
+    display: flex;
+    justify-content: space-between; /* Horizontally space out the cards */
+    gap: 2rem;
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+.vs-card {
+    width: 45%; /* Ensure the cards take up equal space */
+    background-color: #333333;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.vs-card h3 {
+    font-family: 'mont';
+    font-size: 1.5rem;
+    margin-bottom: 2rem; /* Reduce space at the bottom */
+    text-align: center;
+    color: whitesmoke;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #ffffff40;
+    padding-bottom: 1rem;
+}
+
+.vs-card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.vs-card li {
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.vs-card p {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    word-break: break-word;
+}
+
+.infosystem {
+    width: 80%;
+    display: block; 
+    text-align: left; 
+    margin-bottom: 5vh;
+    border-bottom: 1px solid #ffffff40;
+}
+
+.infosystem h3 {
+    font-family: 'mont';
+    text-align: center;
+    font-size: 2rem; 
+    margin-bottom: 1.5rem; 
+}
+
+.info-types {
+    width: 80%;
+    display: block; 
+    text-align: left; 
+    margin-bottom: 5vh;
+    border-bottom: 1px solid #ffffff40;
+    border-width: 90%;
+}
+
+.info-types h3 {
+    font-family: 'mont';
+    text-align: left;
+    font-size: 1.2rem; 
+    margin-bottom: 1rem;
+}
+
+.port1-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #000000;
+    padding: 2rem; /* Optional padding for spacing */
+}
+
+.port1-content > div {
+    width: 90%; /* Match consistent width */
+    margin-bottom: 5vh; /* Add spacing between elements */
+    border: 1px solid #ffffff40; /* Visible border for each div */
+    padding: 1rem; /* Optional internal padding */
+    border-radius: 8px; /* Optional rounded corners for uniformity */
+    background-color: #333333; /* Ensure consistent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+.port1-content p {
+    font-family: 'comf-light';
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+.port1-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    border-bottom: 1px solid #ffffff40;
+    padding-bottom: 1rem;
+}
+
+.port1-content ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.main-func {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-func img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.port1-content ul li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+.port3-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #000000;
+    padding: 2rem; /* Optional padding for spacing */
+}
+
+.port3-content > div {
+    width: 90%; /* Match consistent width */
+    margin-bottom: 5vh; /* Add spacing between elements */
+    border: 1px solid #ffffff40; /* Visible border for each div */
+    padding: 1rem; /* Optional internal padding */
+    border-radius: 8px; /* Optional rounded corners for uniformity */
+    background-color: #333333; /* Ensure consistent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+.port3-content p {
+    font-family: 'comf-light';
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+.port3-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    border-bottom: 1px solid #ffffff40;
+    padding-bottom: 1rem;
+}
+
+.port3-content ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.port3-content ul li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+.main-func {
+    width: 50%;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-func img {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+section h2 {
+    font-family: 'mont';
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.section ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.section ul li {
+    margin-bottom: 1rem;
+}
+
+.section p {
+    margin-bottom: 1rem;
+}
+
+.port1-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: black;
+}
+
+.port1-content p {
+    font-family: 'comf-light';
+}
+
+.reference-cont {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: black;
+}
+
+.reference-cont h2{
+    font-style: 'mont';
+    font-size: 1.3rem;
+    align-items: left;
+}
+.references {
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 90%;
+    font-style: 'comf-light';
+    font-size: 0.8rem;
+    gap: 20px;
+}
+
+.references h2 {
+    font-style: 'mont';
+    font-size: 1.3rem;
+    align-items: left;
+}
+.reference-item {
+    flex: 1;
+    margin-bottom: 10px;
+    text-indent: -1.5em; 
+    padding-left: 1.5em; 
+}
+
+.reference-item a {
+    color: #007BFF; 
+    text-decoration: none;
+}
+
+.reference-item a:hover {
+    text-decoration: underline;
+}
+
+.port5-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #000000;
+    padding: 2rem;
+}
+
+/* Div sections within the container */
+.port5-content > div {
+    width: 90%; /* Match consistent width */
+    margin-bottom: 5vh; /* Add spacing between elements */
+    border: 1px solid #ffffff40; /* Visible border for each div */
+    padding: 1rem; /* Optional internal padding */
+    border-radius: 8px; /* Optional rounded corners for uniformity */
+    background-color: #333333; /* Ensure consistent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+.port5-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    border-bottom: 1px solid #ffffff40;
+    padding-bottom: 1rem;
+}
+
+.port5-content ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+.port5-content p {
+    margin-bottom: 1rem; /* Adds space below each paragraph */
+}
+
+.port5-content ul li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    background-color: black;
+    color: white;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    font-family: 'Montserrat', sans-serif; /* Heading font for table headers */
+    font-weight: bold;
+}
+
+table td {
+    font-family: 'Comfortaa Light', sans-serif;
+}
+table tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+table tr:nth-child(odd) {
+    background-color: black;
+}
+
+.port4-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #000000;
+    padding: 2rem; /* Optional padding for spacing */
+}
+
+.port4-content > div {
+    width: 90%; /* Match consistent width */
+    margin-bottom: 5vh; /* Add spacing between elements */
+    border: 1px solid #ffffff40; /* Visible border for each div */
+    padding: 1rem; /* Optional internal padding */
+    border-radius: 8px; /* Optional rounded corners for uniformity */
+    background-color: #333333; /* Ensure consistent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
+}
+
+.port4-content p {
+    font-family: 'comf-light';
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+.port4-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    border-bottom: 1px solid #ffffff40;
+    padding-bottom: 1rem;
+}
+
+.port4-content ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.port4-content ul li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+.port6-content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #000000;
+    padding: 2rem;
+}
+
+.port6-content > div {
+    width: 90%; /* Match consistent width */
+    margin-bottom: 5vh; /* Add spacing between elements */
+    border: 1px solid #ffffff40; /* Visible border for each div */
+    padding: 1rem; /* Optional internal padding */
+    border-radius: 8px; /* Optional rounded corners for uniformity */
+    background-color: #333333; /* Ensure consistent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+.port6-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: whitesmoke;
+    border-bottom: 1px solid #ffffff40;
+    padding-bottom: 1rem;
+}
+
+.port6-content p {
+    color: whitesmoke;
+    line-height: 1.6;
+}
+
+.port6-content table {
+    width: 90%;
+    border-collapse: collapse;
+    background-color: black;
+    color: white;
+    margin: 20px 0;
+}
+
+.port6-content table th, .port6-content table td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: left;
+}
+
+.port6-content table th {
+    font-family: 'Montserrat', sans-serif; /* Heading font for table headers */
+    font-weight: bold;
+}
+
+.port6-content table td {
+    font-family: 'Comfortaa Light', sans-serif;
+}
+
+.port6-content table tr:nth-child(even) {
+    background-color: #1a1a1a;
+}
+
+.port6-content table tr:nth-child(odd) {
+    background-color: black;
+}
+
+.port6-content ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+}
+
+.port6-content ul li {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 90vh;
+    border-radius: 20px;
+    overflow: hidden;
+    gap: 15px;
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+}
+
+/* Navbar Styling */
+.navbar-container {
+    flex: 0.1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70vw;
+}
+
+.logo .name {
+    font-size: 2vw;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.buttons button {
+    font-family: 'Arial', sans-serif;
+    background: none;
+    border: none;
+    font-size: 1.2vw;
+    margin-left: 20px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.buttons button:hover {
+    color: #a7b1ca;
+}
+
+.buttons button.active {
+    color: #a7b1ca;
+    border-bottom: 2px solid #a7b1ca;
+}
+
+/* Main Content Section */
+.main-page {
+    width: 100%;
+    flex: 0.9;
+    border-radius: 10px;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Left Side (Profile Picture + Intro) */
+
+.random {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.random p {
+    justify-content: justify;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.my-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.my-pic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.the-name h2 {
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.my-intro p {
+    font-size: 1.1vw;
+    color: #b0b0b0;
+    text-align: center;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+
+/* Right Side (Additional Information) */
+.right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.fixed h2 {
+    font-size: 2vw;
+    font-weight: bold;
+    color: #a7b1ca;
+    margin-bottom: 20px;
+}
+
+.infos h3 {
+    font-size: 1.5vw;
+    color: #a7b1ca;
+    margin-bottom: 10px;
+}
+
+.infos ul {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.infos ul li p {
+    font-size: 1.1vw;
+    color: #b0b0b0;
+}
+
+.fixed {
+    align-items: center;
+    justify-content: center;
+}
+.infos p {
+    font-size: 1.1vw;
+    color: #b0b0b0;
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .logo .name {
+        font-size: 5vw;
+    }
+
+    .buttons button {
+        font-size: 3vw;
+    }
+
+    .the-name h2 {
+        font-size: 4vw;
+    }
+
+    .my-intro p {
+        font-size: 3vw;
+    }
+
+    .right-side {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .main-page {
+        padding: 10px;
+    }
+
+    .my-pic {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .port-row {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .port {
+        width: 45%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .port {
+        width: 100%; 
+    }
+}
+
